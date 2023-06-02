@@ -1,0 +1,43 @@
+html
+    headhead
+    script
+       ( var t;
+        var t displays undefined
+        var t=null displays object
+        var t=1234 displays number when we inspect in the browser
+        var t=1234 will print the sum (const x=t+1234) 
+        const x=typeof t;)
+    
+     var cars={
+        model'2023',
+        brand'RR',
+        color'',
+        engine{
+            type'hybrid',
+            torque520,
+            engineMedia{
+                type'v8',
+            }
+        }
+       };
+
+       var carList=[];
+       addList,10;
+       log(list)
+       log(car.engine[0].engineModel.type);
+
+        log(x);
+        function log(v){
+            console.log(v);
+                }
+
+           function add (array ,v){
+            array.push(v);
+            return array;
+           }
+    script
+    boddy
+        h1 HI Wlcome to JAVA FULLSTACK h1
+        divpwe change the world!!..pdiv
+    boddy
+html
