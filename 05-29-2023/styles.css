@@ -1,0 +1,23 @@
+body
+{
+color: green;
+border: 2px;
+border-radius: 5px;}
+#table
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius:5px;
+    text-align: center;
+}
+th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius:5px; 
+    text-align: center;
+    font-size: 25px;
+
+}
+.name{
+    background-color: blue;
+}
