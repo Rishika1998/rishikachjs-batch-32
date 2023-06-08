@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>myprofile</title></head>
+    <body style="background-color:lightpink">
+        <h1>My Profile data</h1>
+            <form style="background-color: azure;">
+            <label for="fname">FirstName:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label>lastName:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label>DOB:</label>
+            <input type="date" id="DOB" name="DOB"><br><br>
+            <label>Email:</label>
+            <input type="text" id="Email" name="Email"><br><br>
+            <label>phone:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <input type="button" value="submit" onclick="dis()">
+            </form>
+        <div id="f"></div>
+        <div id="l"></div>
+        <div id="d"></div>
+        <div id="e"></div>
+        <div id="p"></div>
+
+        <script>
+            function dis(){
+                const firstname=document.getElementById("fname").value;
+                const lastname=document.getElementById("lname").value;
+                const DateOfBirth=document.getElementById("DOB").value;
+                const email=document.getElementById("Email").value;
+                const Phone=document.getElementById("phone").value;
+
+              //  let data="firstname:"+firstname+"<br>"+
+                //            "lastname:"+lastname+"<br>"+
+                  //              "DateOfBirth:"+DateOfBirth+"<br>"+
+                    //            "email:"+email+"<br>"+
+                      //              "Phone:"+Phone;
+
+               document.getElementById("f").innerHTML = firstname;      
+              document.getElementById("l").innerHTML = lastname;
+              document.getElementById("d").innerHTML = DateOfBirth;
+              document.getElementById("e").innerHTML = email;
+              document.getElementById("p").innerHTML = Phone;
+
+
+
+
+}
+        </script>
+    </body>
+</html>
