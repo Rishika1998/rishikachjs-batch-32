@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <h4>Rishika Priya Cheruku</h4>
+    <form>
+        <label >First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label>Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label>DOB:</label>
+        <input type="date" id="DOB" name="DOB"><br>
+        <label>Email:</label>
+        <input type="text" id="Email" name="Email"><br>
+        <label>Phone:</label>
+        <input type="text" id="phone" name="phone"><br>
+        <input type="button" value="Submit" onclick="dis()">
+    </form>
+    <div id="Profiledata"></div>
+
+    <script>
+        function dis() {
+            var firstname = document.getElementById("fname").value;
+            var lastname = document.getElementById("lname").value;
+            var DateOfBirth = document.getElementById("DOB").value;
+            var email = document.getElementById("Email").value;
+            var Phone = document.getElementById("phone").value;
+
+            var data = "First Name: " + firstname + "<br>" +
+                       "Last Name: " + lastname + "<br>" +
+                       "DOB: " + DateOfBirth + "<br>" +
+                       "Email: " + email + "<br>" +
+                       "Phone: " + Phone;
+
+            document.getElementById("Profiledata").innerHTML = data;
+        }
+    </script>
+</body>
+</html>
