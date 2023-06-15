@@ -1,0 +1,10 @@
+body{
+    background-color: aquamarine;
+    color: black;
+    width:25%;
+    size: 100px;
+}
+#vertical-menu{
+    height: 700px;
+    font-size: 25px;
+}

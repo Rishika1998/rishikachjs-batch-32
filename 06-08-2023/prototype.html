@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second Smallest</title>
+  <script>
+    Array.prototype.SecondSmallest = function() {
+      if (this.length < 1) {
+        return undefined;
+      }
+
+     
+      const sortedArray = this.slice().sort(function(a, b) {
+        return a - b;
+      });
+
+     
+      return sortedArray[1];
+    };
+
+ 
+    const arr = [5, 4, 8, 1, 9, 3, 6];
+    const secSmallest = arr.SecondSmallest();
+    console.log('Second smallest is :', secSmallest);
+  </script>
+</head>
+<body>
+  <h1>Find Second Smallest Value</h1>
+</body>
+</html>

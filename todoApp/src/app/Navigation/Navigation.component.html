@@ -1,0 +1,13 @@
+<html>
+<body>
+  <table id="vertical-menu">
+    <th>
+      <tr>Profile</tr>
+      <tr>Contact</tr>
+      <tr><button *ngIf="login" (click)="toggleMenu()" >Login</button>
+      <button *ngIf="!login" (click)="toggleMenu()"> Logout</button></tr>
+      <tr><input type="text" id="searchbox" > Search</tr>
+    </th>
+  </table>
+</body>
+</html>

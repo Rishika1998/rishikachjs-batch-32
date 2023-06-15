@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Information</title>
+    <script>
+        function displayProfile() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+            var dob = document.getElementById("dob").value;
+
+            var hobbiesList = "";
+            for (var i = 0; i < hobbies.length; i++) {
+                hobbiesList += hobbies[i].value + ", ";
+            }
+            hobbiesList = hobbiesList.slice(0, -2);
+
+            var profileData = "First Name: " + firstName + "<br>" +
+                "Last Name: " + lastName + "<br>" +
+                "Gender: " + gender + "<br>" +
+                "Email: " + email + "<br>" +
+                "Phone Number: " + phoneNumber + "<br>" +
+                "Hobbies: " + hobbiesList + "<br>" +
+                "Date of Birth: " + dob;
+
+            document.getElementById("profileData").innerHTML = profileData;
+        }
+    </script>
+</head>
+<body>
+    <h1>Profile Information</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">Male
+        <input type="radio" id="female" name="gender" value="Female">Female<br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber"><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">Reading
+        <input type="checkbox" id="hobby2" name="hobbies" value="Sports">Sports
+        <input type="checkbox" id="hobby3" name="hobbies" value="Music">Music<br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <input type="button" value="Submit" onclick="displayProfile()">
+    </form>
+    <div id="profileData"></div>
+</body>
+</html>
